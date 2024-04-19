@@ -1,6 +1,7 @@
 import React from 'react'
 import ProjectTitle from './ProjectTitle'
 import Button from './Button'
+import data from '../assets/data.json'
 
 function Featured() {
     return (
@@ -10,8 +11,8 @@ function Featured() {
             <div className=' border-t-2 border-zinc-700'></div>
 
             <div className=' p-10 flex justify-center items-center flex-wrap'>
-                {["Aaaaa", "Bbbbb", "Ccccc", "Ddddd"].map((item, index) => (
-                    <div className='m-5'>
+                {data.map((item, index) => (
+                    <div className='m-5 uppercase'>
                         <ProjectTitle props={{ item, index }} />
                     </div>
                 ))}

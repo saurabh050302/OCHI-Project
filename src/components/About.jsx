@@ -12,7 +12,7 @@ function About() {
                     <h1 className=' text-5xl text-zinc-800 mb-4'>Our approach:</h1>
                     <Button text={"Read More"} />
                 </div>
-                <div className=' w-1/2 h-[70vh] rounded-3xl bg-[#bee246]'></div>
+                <div className=' w-1/2 h-[70vh] rounded-3xl bg-[url("https://www.ochi-ochi.com/cdn/shop/products/Fdr_bk_sun_fr_300x.jpg?v=1664457107")] bg-center '></div>
             </div>
         </div>
     )

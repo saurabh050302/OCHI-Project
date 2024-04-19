@@ -5,13 +5,13 @@ import { motion } from 'framer-motion'
 
 function LandingPage() {
     return (
-        <div data-scroll data-scroll-speed='-0.3'  className=' z-20 w-full h-screen pt-2'>
+        <div data-scroll data-scroll-speed='-0.3' className=' z-20 w-full h-screen pt-2'>
             <div className='textstructure mt-14 p-20 '>
                 {["We create", "eye opening", "presentations"].map((item, index) => (
                     <div className='masker flex items-center' index={index}>
                         {index == 1 &&
                             <motion.div initial={{ width: 0 }} animate={{ width: "7rem" }} transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
-                                className='bg-red-500 h-[4.5rem] rounded-md relative top-1'>
+                                className='bg-[url("https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg")] h-[4.5rem] rounded-md relative top-1'>
                             </motion.div>}
                         <h1 className='uppercase text-8xl leading-[6vw] tracking-tighter font-bold'>{item}</h1>
                     </div>
